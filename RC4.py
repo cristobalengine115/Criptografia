@@ -47,6 +47,8 @@ if __name__ == "__main__":
     lines = reveiveInput()
     S = KSA(lines[0])
     plainText = lines[1]
+    print(lines[0])
+    print(lines[1])
     keyStreamDec = PRGA (S, len(plainText))
     for i in range(0, len(keyStreamDec)):
         keyStreamHex.append(format(keyStreamDec[i], 'x'))
