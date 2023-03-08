@@ -5,3 +5,5 @@ for line in fileinput.input():
 
 def sumaNumeros(lines):
     print(sum(lines))
+
+sumaNumeros()
