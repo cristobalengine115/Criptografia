@@ -3,9 +3,12 @@ from pydoc import plain
 
 def reveiveInput():
     lines = []
+    newLines = []
     for line in fileinput.input():
         lines.append(line)
-    return lines
+    for sub in lines:
+        newLines.append(sub.replace("\n", ""))
+    return newLines
 
 
 def KSA(key):
@@ -48,7 +51,6 @@ if __name__ == "__main__":
     key = lines[0]
     S = KSA(key)
     plainText = lines[1]
-    print(key, plainText)
     keyStreamDec = PRGA (S, len(plainText))
     for i in range(0, len(keyStreamDec)):
         keyStreamHex.append(format(keyStreamDec[i], 'x'))
