@@ -59,3 +59,4 @@ if __name__ == "__main__":
         cypherTextHex.append(hex(cypherTextDec[i])[2:].zfill(2))
         cypherText = ''.join(cypherTextHex).upper()
     print(cypherText)
+    a = 1+1
