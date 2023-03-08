@@ -46,6 +46,8 @@ if __name__ == "__main__":
     cypherTextHex = []
     lines = reveiveInput()
     S = KSA(lines[0])
+    print(lines[0])
+    print(lines[1])
     plainText = 'lines[0]'
     keyStreamDec = PRGA (S, len(plainText))
     for i in range(0, len(keyStreamDec)):
@@ -59,4 +61,3 @@ if __name__ == "__main__":
         cypherTextHex.append(hex(cypherTextDec[i])[2:].zfill(2))
         cypherText = ''.join(cypherTextHex).upper()
     print(cypherText)
-    a = 1+1
