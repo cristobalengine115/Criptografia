@@ -10,7 +10,7 @@ def clearLines(lines):
 
 
 def sumaNumeros(n):
-    print(n)
+    print(sum(n))
 
 numbers = clearLines(lines)
 sumaNumeros(numbers)
