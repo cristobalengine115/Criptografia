@@ -5,7 +5,7 @@ for line in fileinput.input():
 
 def clearLines(lines):
     newLines = [x[:-1] for x in lines]
-    return lines
+    return newLines
 
 
 def sumaNumeros(n):
