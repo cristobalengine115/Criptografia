@@ -1,2 +1,2 @@
 #!/bin/sh
-python3 PruebaInicial.py
+python3 RC4.py
