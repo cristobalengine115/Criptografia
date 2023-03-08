@@ -9,7 +9,7 @@ def clearLines(lines):
 
 
 def sumaNumeros(n):
-    print(sum(n))
+    print(sum(int(n)))
 
 numbers = clearLines(lines)
 sumaNumeros(numbers)
