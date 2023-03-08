@@ -5,11 +5,12 @@ for line in fileinput.input():
 
 def clearLines(lines):
     newLines = [x[:-1] for x in lines]
-    return newLines
+    numbers = [eval(i) for i in newLines]
+    return numbers
 
 
 def sumaNumeros(n):
-    print(sum(int(n)))
+    print(n)
 
 numbers = clearLines(lines)
 sumaNumeros(numbers)
