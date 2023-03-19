@@ -1,9 +1,5 @@
-from cgitb import text
 import fileinput
-from operator import sub
 from pydoc import plain
-from turtle import right
-from xml.etree.ElementTree import QName
 
 S0_Box = [[1,0,3,2],
         [3,2,1,0],
@@ -68,7 +64,6 @@ if __name__ == "__main__":
     oper = lines[0]
     plainText = lines[1]
     key = lines[2]
-    print(lines)
     if(oper == 'E'):
         plainText = '01010101'
         key = '0000011111'
