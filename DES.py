@@ -62,11 +62,9 @@ def inversePermutation(text):
 if __name__ == "__main__":
     lines = reveiveInput()
     oper = lines[0]
-    plainText = lines[1]
-    key = lines[2]
+    key = lines[1]
+    plainText = lines[2]
     if(oper == 'E'):
-        plainText = '01010101'
-        key = '0000011111'
         plainText = InitialPermutation(plainText)
         k1, k2 = SubKeysGen(key)
         feistel1 = FeistelOperation(k1, plainText)
@@ -75,8 +73,6 @@ if __name__ == "__main__":
         cipherText = inversePermutation(feistel2)
         print(cipherText)
     if(oper == 'D'):
-        plainText = '11110000'
-        key = '0000000000'
         plainText = InitialPermutation(plainText)
         k1, k2 = SubKeysGen(key)
         feistel1 = FeistelOperation(k2, plainText)
