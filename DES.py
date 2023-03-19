@@ -68,6 +68,7 @@ if __name__ == "__main__":
     oper = lines[0]
     plainText = lines[1]
     key = lines[2]
+    print(lines)
     if(oper == 'E'):
         plainText = '01010101'
         key = '0000011111'
