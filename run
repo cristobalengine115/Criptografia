@@ -1,2 +1,2 @@
 #!/bin/sh
-python3 DES.py
+python3 KidKrypto.py
